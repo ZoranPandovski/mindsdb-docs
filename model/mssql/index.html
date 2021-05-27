@@ -634,6 +634,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#train-time-series-model-example" class="md-nav__link">
+    Train time series model example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-training-status_1" class="md-nav__link">
+    Model training status
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1573,6 +1587,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#train-time-series-model-example" class="md-nav__link">
+    Train time series model example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-training-status_1" class="md-nav__link">
+    Model training status
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1635,6 +1663,17 @@ Or, <code>openquery</code>:</p>
 <p class="admonition-title">That's it <img alt="🎉" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/72x72/1f389.png" title=":tada:" /> <img alt="🏆" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/72x72/1f3c6.png" title=":trophy:" />  <img alt="💻" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/72x72/1f4bb.png" title=":computer:" /></p>
 <p>You have successfully trained a new model from a Microsoft SQL Server. The next step is to get predictions by <a href="/model/query/mssql">querying the model</a>.</p>
 </div>
+<h3 id="train-time-series-model-example">Train time series model example</h3>
+<p>The table used for training the model is the <a href="https://www.kaggle.com/bappekim/air-pollution-in-seoul">Air Pollution in Seoul</a> timeseries dataset.</p>
+<div class="highlight"><pre><span></span><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">predict</span><span class="p">,</span> <span class="n">select_data_query</span><span class="p">,</span><span class="n">training_options</span><span class="p">)</span>
+<span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;airq_model&#39;</span><span class="p">,</span> <span class="s1">&#39;SO2&#39;</span><span class="p">,</span> <span class="s1">&#39;SELECT * FROM default.pollution_measurement&#39;</span><span class="p">,</span> <span class="s1">&#39;{&quot;timeseries_settings&quot;:{&quot;order_by&quot;: [&quot;Measurement date&quot;], &quot;window&quot;:20}}&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>This <code>INSERT</code> query will train a new model called <code>pollution_measurement</code> that predicts the passenger <code>SO2</code> value.
+Since, this is a timeseries dataset, the <code>timeseries_settings</code> will order the data by the <code>Measurement date</code> column and will set the window for rows to "look back" when making a prediction.</p>
+<h3 id="model-training-status_1">Model training status</h3>
+<p>To check that the training finished successfully, you can <code>SELECT</code> from mindsdb.predictors table and get the training status, e.g.:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span> <span class="k">WHERE</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&lt;model_name&gt;&#39;</span><span class="p">;</span>
+</code></pre></div>
                 
               
               

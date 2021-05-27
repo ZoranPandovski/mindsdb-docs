@@ -1602,6 +1602,10 @@ The values provided in the <code>INSERT</code> query are:</p>
 <li>training_options (JSON as comma separated string) -- optional value that contains additional training parameters. For a full list of parameters, check the <a href="/PredictorInterface/#learn">PredictorInterface</a>.</li>
 </ul>
 <p><img alt="Train model from psql client" src="/assets/predictors/postgresql-insert.gif" /></p>
+<div class="admonition info">
+<p class="admonition-title">Timeseries</p>
+<p>To train timeseries model, check out the <a href="/model/timeseries">timeseries example</a>.</p>
+</div>
 <h3 id="train-new-model-example">Train new model example</h3>
 <p>The following example shows you how to train a new model from a psql client. The table used for training the model is the <a href="https://www.kaggle.com/teejmahal20/airline-passenger-satisfaction">Airline Passenger Satisfaction</a> dataset.</p>
 <p><div class="highlight"><pre><span></span><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">predict</span><span class="p">,</span> <span class="n">select_data_query</span><span class="p">)</span> <span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;airline_survey_model&#39;</span><span class="p">,</span> <span class="s1">&#39;satisfaction&#39;</span><span class="p">,</span> <span class="s1">&#39;SELECT * FROM airline_passenger_satisfaction&#39;</span><span class="p">);</span>

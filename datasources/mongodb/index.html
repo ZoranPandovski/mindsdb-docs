@@ -1683,10 +1683,10 @@
 <p>The <code>--api</code> parameter specifies the type of API to use -- in this case HTTP and Mongo. The <code>--config</code> parameter specifies the location of the configuration file.</p>
 <p><img alt="Start MindsDB with config" src="/assets/data/mongo/start-mongo.gif" /></p>
 <h3 id="connect-to-mongodb-api">Connect to MongoDB API</h3>
-<p>To connect to mindsdb's MongoDB API, use the <code>host</code> that you have specified inside the <code>api['mongodb']</code> key e.g:</p>
-<div class="highlight"><pre><span></span><code>mongo --host 127.0.0.1
+<p>You can use mongo shell to connect to mindsdb's MongoDB API. As a prerequisite you need mongo shell version greather then 3.6. To connect use the <code>host</code> that you have specified inside the <code>api['mongodb']</code> key e.g:</p>
+<div class="highlight"><pre><span></span><code>mongo --host 127.0.0.1 -u &quot;username&quot; -p &quot;password&quot;
 </code></pre></div>
-<p>To make sure everything works, you should be able to see the predictors collection.</p>
+<p>To make sure everything works, you should be able to list the predictors collection:</p>
 <div class="highlight"><pre><span></span><code>use mindsdb
 show collections
 </code></pre></div>

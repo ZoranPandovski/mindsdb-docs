@@ -1599,7 +1599,7 @@ The values provided in the <code>INSERT</code> query are:</p>
 </ul>
 <p><img alt="Train model from ClickHouse client" src="/assets/predictors/clickhouse-insert.gif" /></p>
 <h3 id="train-new-model-example">Train new model example</h3>
-<p>The following example shows you how to train a new model from the ClickHouse client. The table used for training the model is the <a href="https://www.kaggle.com/bappekim/air-pollution-in-seoul">Air Pollution in Seoul</a>timeseries dataset.</p>
+<p>The following example shows you how to train a new model from the ClickHouse client. The table used for training the model is the <a href="https://www.kaggle.com/bappekim/air-pollution-in-seoul">Air Pollution in Seoul</a> timeseries dataset.</p>
 <div class="highlight"><pre><span></span><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">predict</span><span class="p">,</span> <span class="n">select_data_query</span><span class="p">,</span><span class="n">training_options</span><span class="p">)</span>
 <span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;airq_model&#39;</span><span class="p">,</span> <span class="s1">&#39;SO2&#39;</span><span class="p">,</span> <span class="s1">&#39;SELECT * FROM default.pollution_measurement&#39;</span><span class="p">,</span> <span class="s1">&#39;{&quot;timeseries_settings&quot;:{&quot;order_by&quot;: [&quot;Measurement date&quot;], &quot;window&quot;:20}}&#39;</span><span class="p">);</span>
 </code></pre></div>

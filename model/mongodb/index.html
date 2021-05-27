@@ -641,6 +641,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#delete-model" class="md-nav__link">
+    Delete model
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1568,6 +1575,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#delete-model" class="md-nav__link">
+    Delete model
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1605,9 +1619,9 @@
 <li>find(dict) - The dict that selects the documents from the collection, must be valid JSON format. Same as <a href="https://docs.mongodb.com/manual/reference/method/db.collection.find/">db.collection.find({...})</a></li>
 </ul>
 </li>
-<li>training_options (dict) -- Optional value that contains additional training parameters. For a full list of parameters, check the <a href="/PredictorInterface/#learn">PredictorInterface</a>.</li>
+<li>training_options (dict) -- Optional value that contains additional training parameters. To train timeseries model you need to provide <code>training_options</code>.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="n">db</span><span class="p">.</span><span class="n">predictors</span><span class="p">.</span><span class="k">insert</span><span class="p">(</span><span class="err">{</span>
+<p><div class="highlight"><pre><span></span><code><span class="n">db</span><span class="p">.</span><span class="n">predictors</span><span class="p">.</span><span class="k">insert</span><span class="p">(</span><span class="err">{</span>
     <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">str</span><span class="p">,</span>
     <span class="s1">&#39;predict&#39;</span><span class="p">:</span> <span class="n">str</span> <span class="o">|</span> <span class="n">list</span> <span class="k">of</span> <span class="n">fields</span><span class="p">,</span>
     <span class="s1">&#39;connection&#39;</span><span class="p">:</span> <span class="n">str</span><span class="p">,</span>  <span class="o">#</span> <span class="n">optional</span>
@@ -1618,6 +1632,27 @@
     <span class="err">}</span><span class="p">,</span>
     <span class="s1">&#39;training_options&#39;</span><span class="p">:</span> <span class="n">dict</span>  <span class="o">#</span> <span class="n">optional</span>
 <span class="err">}</span><span class="p">)</span>
+</code></pre></div>
+For the timeseries model:</p>
+<div class="highlight"><pre><span></span><code>db.predictors.insert({
+    &#39;name&#39;: str,
+    &#39;predict&#39;: str | list of fields,
+    &#39;connection&#39;: str,  # optional
+    &#39;select_data_query&#39;:{
+    &#39;database&#39;: str,
+    &#39;collection&#39;: str,
+    &#39;find&#39;: dict  
+    },
+    &#39;training_options&#39;: { 
+        &quot;timeseries_settings&quot;: {                
+                &quot;order_by&quot;: list of fields,                
+                &quot;group_by&quot;: list of fields,    #optional            
+                &quot;nr_predictions&quot;: int,         #optional       
+                &quot;use_previous_target&quot;: Boolean,                
+                &quot;window&quot;: int            
+            }
+    }        
+})
 </code></pre></div>
 <h3 id="train-new-model-example">Train new model example</h3>
 <p>The following example shows you how to train a new model from a mongo client. The collection used for training the model is the <a href="https://www.kaggle.com/blastchar/telco-customer-churn">Telcom Customer Churn</a> dataset.</p>
@@ -1642,6 +1677,10 @@
 <p class="admonition-title">That's it <img alt="🎉" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/72x72/1f389.png" title=":tada:" /> <img alt="🏆" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/72x72/1f3c6.png" title=":trophy:" />  <img alt="💻" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/72x72/1f4bb.png" title=":computer:" /></p>
 <p>You have successfully trained a new model from a mongo shell. The next step is to get predictions by <a href="/model/query/mongodb">querying the model</a>.</p>
 </div>
+<h4 id="delete-model">Delete model</h4>
+<p>To delete the model run <code>remove</code> function on predictors collection and send the name of the model to delete as:</p>
+<div class="highlight"><pre><span></span><code>db.predictors.remove({name: &#39;model_name&#39;})
+</code></pre></div>
                 
               
               
