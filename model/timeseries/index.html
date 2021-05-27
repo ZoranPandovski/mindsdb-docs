@@ -1524,7 +1524,7 @@
 <div class="highlight"><pre><span></span><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">predict</span><span class="p">,</span> <span class="n">select_data_query</span><span class="p">,</span><span class="n">training_options</span><span class="p">)</span>
 <span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;airq_model&#39;</span><span class="p">,</span> <span class="s1">&#39;SO2&#39;</span><span class="p">,</span> <span class="s1">&#39;SELECT * FROM default.pollution_measurement&#39;</span><span class="p">,</span> <span class="s1">&#39;{&quot;timeseries_settings&quot;:{&quot;order_by&quot;: [&quot;Measurement date&quot;], &quot;window&quot;:20}}&#39;</span><span class="p">);</span>
 </code></pre></div>
-<p>This <code>INSERT</code> query will train a new model called <code>pollution_measurement</code> that predicts the passenger <code>SO2</code> value.
+<p>This <code>INSERT</code> query will train a new model called <code>airq_model</code> that predicts the passenger <code>SO2</code> value.
  Since, this is a timeseries dataset, the <code>timeseries_settings</code> will order the data by the <code>Measurement date</code> column and will set the window for rows to <strong>look back</strong> when making a prediction.</p>
                 
               
