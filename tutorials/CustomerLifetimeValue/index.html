@@ -1643,14 +1643,14 @@
 <li>sentiment</li>
 </ul>
 <h2 id="mindsdb-code-example">MindsDB Code example</h2>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">mindsdb</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">mindsdb_native</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
 
 
-<span class="n">predictor</span> <span class="o">=</span> <span class="n">mindsdb</span><span class="o">.</span><span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;movie_sentiment_predictor&#39;</span><span class="p">)</span>
+<span class="n">predictor</span> <span class="o">=</span> <span class="n">mindsdb_native</span><span class="o">.</span><span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;movie_sentiment_predictor&#39;</span><span class="p">)</span>
 <span class="n">predictor</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="s1">&#39;train.tsv&#39;</span><span class="p">,</span> <span class="n">to_predict</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sentiment&#39;</span><span class="p">])</span>
 
-<span class="n">accuracy_data</span> <span class="o">=</span> <span class="n">predictions</span><span class="o">.</span><span class="n">test</span><span class="p">(</span><span class="s1">&#39;test.tsv&#39;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">)</span>
+<span class="n">accuracy_data</span> <span class="o">=</span> <span class="n">predictor</span><span class="o">.</span><span class="n">test</span><span class="p">(</span><span class="s1">&#39;test.tsv&#39;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">)</span>
 
 <span class="n">accuracy_pct</span> <span class="o">=</span> <span class="n">accuracy_data</span><span class="p">[</span><span class="s1">&#39;sentiment_accuracy&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Accuracy of </span><span class="si">{</span><span class="n">accuracy_pct</span><span class="si">}</span><span class="s1">% !&#39;</span><span class="p">)</span>

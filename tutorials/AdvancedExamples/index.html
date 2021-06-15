@@ -1620,9 +1620,9 @@
 <p>In order for mindsdb to predict multiple columns, you simply need to change the <code>to_predict</code> argument from a string (denoting the name of the column) to an array containing the names of the columns you want to predict.</p>
 <p>In the following example, we've altered the real estate model to predict the <code>location</code> and <code>neighborhood</code> both, instead of the <code>rental_price</code>.</p>
 <h3 id="code-example">Code example</h3>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">mindsdb</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">mindsdb_native</span>
 
-<span class="n">mdb</span> <span class="o">=</span> <span class="n">mindsdb</span><span class="o">.</span><span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;multilabel_real_estate_model&#39;</span><span class="p">)</span>
+<span class="n">mdb</span> <span class="o">=</span> <span class="n">mindsdb_native</span><span class="o">.</span><span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;multilabel_real_estate_model&#39;</span><span class="p">)</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span>
     <span class="n">from_data</span><span class="o">=</span><span class="s2">&quot;https://s3.eu-west-2.amazonaws.com/mindsdb-example-data/home_rentals.csv&quot;</span><span class="p">,</span>
     <span class="n">to_predict</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">,</span><span class="s1">&#39;neighborhood&#39;</span><span class="p">]</span> <span class="c1"># Array with the names of the columns we want to predict</span>

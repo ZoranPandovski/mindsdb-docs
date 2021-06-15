@@ -1,239 +1,239 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://docs.mindsdb.com/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/installation/docker/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/installation/windows/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/installation/linux/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/installation/macos/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/installation/source/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/datasources/mysql/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/datasources/postgresql/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/datasources/mariadb/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/datasources/clickhouse/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/datasources/mssql/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/datasources/mongodb/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/datasources/remote/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/datasources/local/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/datasources/snowflake/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/train/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/mysql/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/postgresql/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/mariadb/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/clickhouse/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/mssql/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/mongodb/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/quality/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/query/mysql/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/query/postgresql/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/query/mariadb/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/query/clickhouse/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/query/mssql/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/query/mongodb/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/model/query/studio/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/mysql/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/mariadb/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/postgresql/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/clickhouse/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/microsoft-sql-server/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/BasicExample/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/GoogleColab/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/JupyterNotebook/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/PredictorInterface/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/FunctionalInterface/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/AdvancedExamples/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/Timeseries/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/features/DataSources/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/Config/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/lightwood/info/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/comparisons/ComparsionWithOtherLibraries/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/PredictiveMaintenance/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/CreditScoring/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/CustomerLifetimeValue/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/FraudDetection/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/PatientHealthOutcomes/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/MedicalDiagnosis/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/HotelBooking/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/tutorials/ChurnReduction/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/server/SDKs/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/contribute/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/community/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/faq/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mindsdb.com/InsideMindsDB/</loc>
-     <lastmod>2021-05-27</lastmod>
+     <lastmod>2021-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -1660,19 +1660,17 @@
 <h2 id="goal">Goal</h2>
 <p>The goal is to be able to predict the best <strong>rental_price</strong> for new properties given the information that we have in home_rentals.csv.</p>
 <h3 id="learning">Learning</h3>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">mindsdb</span> <span class="kn">import</span> <span class="n">Predictor</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">mindsdb_native</span> <span class="kn">import</span> <span class="n">Predictor</span>
 
 <span class="c1"># We tell the Predictor what column or key we want to learn and from what data</span>
-<span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;real_estate_model&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span>
+<span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;home_rentals_price&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span>
     <span class="n">from_data</span><span class="o">=</span><span class="s2">&quot;https://s3.eu-west-2.amazonaws.com/mindsdb-example-data/home_rentals.csv&quot;</span><span class="p">,</span> <span class="c1"># the path to the file where we can learn from, (note: can be url)</span>
     <span class="n">to_predict</span><span class="o">=</span><span class="s1">&#39;rental_price&#39;</span><span class="p">,</span> <span class="c1"># the column we want to learn to predict given all the data in the file</span>
 <span class="p">)</span>
 </code></pre></div>
 <p><strong>Note</strong>: that the argument <strong>from_data</strong> can be a path to a json, csv (or other separators), excel given as a file or as a URL, or a pandas Dataframe</p>
 <h3 id="predicting">Predicting</h3>
-<div class="highlight"><pre><span></span><code><span class="n">mdb</span> <span class="o">=</span> <span class="n">mindsdb</span><span class="o">.</span><span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;real_estate_model&#39;</span><span class="p">)</span>
-
-<span class="c1"># use the model to make predictions</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># use the model to make predictions</span>
 <span class="n">result</span> <span class="o">=</span> <span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;home_rentals_price&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">when_data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;number_of_rooms&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;initial_price&#39;</span><span class="p">:</span> <span class="mi">1222</span><span class="p">,</span> <span class="s1">&#39;sqft&#39;</span><span class="p">:</span> <span class="mi">1190</span><span class="p">})</span>
 
 <span class="c1"># The result will be an array containing predictions for each data point (in this case only one), a confidence for said prediction and a few other extra informations</span>

@@ -1936,12 +1936,12 @@
 </details>
 
 <h2 id="mindsdb-code-example">MindsDB Code example</h2>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">mindsdb</span> <span class="kn">import</span> <span class="n">Predictor</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">mindsdb_native</span> <span class="kn">import</span> <span class="n">Predictor</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">balanced_accuracy_score</span><span class="p">,</span> <span class="n">confusion_matrix</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">balanced_accuracy_score</span>
 
 
-<span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">sample</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">run</span><span class="p">():</span>
 
     <span class="n">mdb</span> <span class="o">=</span> <span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;german_data&#39;</span><span class="p">)</span>
 

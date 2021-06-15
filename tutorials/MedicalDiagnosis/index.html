@@ -1906,14 +1906,14 @@ concave points_sestandard error for number of concave portions of the contour
 </details>
 
 <h2 id="mindsdb-code-example">MindsDB Code example</h2>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">mindsdb</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">mindsdb_native</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">balanced_accuracy_score</span>
 
 
-<span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">sample</span><span class="p">):</span>
-    <span class="n">mdb</span> <span class="o">=</span> <span class="n">mindsdb</span><span class="o">.</span><span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;cancer_model&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">run</span><span class="p">():</span>
+    <span class="n">mdb</span> <span class="o">=</span> <span class="n">mindsdb_native</span><span class="o">.</span><span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;cancer_model&#39;</span><span class="p">)</span>
 
     <span class="n">mdb</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="s1">&#39;processed_data/train.csv&#39;</span><span class="p">,</span> <span class="n">to_predict</span><span class="o">=</span><span class="s1">&#39;diagnosis&#39;</span><span class="p">)</span>
 
@@ -1928,12 +1928,10 @@ concave points_sestandard error for number of concave portions of the contour
     <span class="k">return</span> <span class="p">{</span>
         <span class="s1">&#39;accuracy&#39;</span><span class="p">:</span> <span class="n">accuracy</span>
         <span class="p">,</span><span class="s1">&#39;accuracy_function&#39;</span><span class="p">:</span> <span class="s1">&#39;balanced_accuracy_score&#39;</span>
-        <span class="p">,</span><span class="s1">&#39;backend&#39;</span><span class="p">:</span> <span class="n">backend</span>
     <span class="p">}</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">sample</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">else</span> <span class="kc">False</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">run</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">run</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="mindsdb-accuracy">Mindsdb accuracy</h2>

@@ -1762,14 +1762,14 @@ tenureNumber of months the customer has stayed with the company
 </details>
 
 <h2 id="mindsdb-code-example">MindsDB Code example</h2>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">mindsdb</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">mindsdb_native</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
 
 
 <span class="k">def</span> <span class="nf">run</span><span class="p">():</span>
 
-    <span class="n">mdb</span> <span class="o">=</span> <span class="n">mindsdb</span><span class="o">.</span><span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;employee_retention_model&#39;</span><span class="p">)</span>
+    <span class="n">mdb</span> <span class="o">=</span> <span class="n">mindsdb_native</span><span class="o">.</span><span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;customer_churn_model&#39;</span><span class="p">)</span>
 
     <span class="n">mdb</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="s1">&#39;dataset/train.csv&#39;</span><span class="p">,</span> <span class="n">to_predict</span><span class="o">=</span><span class="s1">&#39;Churn&#39;</span><span class="p">)</span>
 
@@ -1788,7 +1788,6 @@ tenureNumber of months the customer has stayed with the company
     <span class="k">return</span> <span class="p">{</span>
         <span class="s1">&#39;accuracy&#39;</span><span class="p">:</span> <span class="n">accuracy</span><span class="p">,</span>
         <span class="s1">&#39;accuracy_function&#39;</span><span class="p">:</span> <span class="s1">&#39;accuracy_score&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;backend&#39;</span><span class="p">:</span> <span class="n">backend</span><span class="p">,</span>
         <span class="s1">&#39;prediction_per_row&#39;</span><span class="p">:</span> <span class="n">additional_info</span>
     <span class="p">}</span>
 
