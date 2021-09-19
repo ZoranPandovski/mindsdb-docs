@@ -674,7 +674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/predictor/" class="md-nav__link">
+      <a href="../../api/drop/" class="md-nav__link">
         Drop
       </a>
     </li>
@@ -686,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/predictor/" class="md-nav__link">
+      <a href="../../api/select/" class="md-nav__link">
         Select
       </a>
     </li>
@@ -698,7 +698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/predictor/" class="md-nav__link">
+      <a href="../../api/publish/" class="md-nav__link">
         Publish
       </a>
     </li>
@@ -2261,7 +2261,7 @@
                 
                 
                 <h1 id="mindsdb-as-a-sql-database">MindsDB as a SQL Database</h1>
-<p>MindsDB provides a powerful MySQL API that allows to the users to connect to it using any mysql-client. By default, on the server start MindsDB will satart http and mysql APIs. If you want to run only the mysql API provide that as a parameter on the server start:</p>
+<p>MindsDB provides a powerful MySQL API that allows to the users to connect to it using any mysql-client. By default, MindsDB Server will start http and mysql APIs. If you want to run only the mysql API provide that as a parameter on the server start:</p>
 <div class="highlight"><pre><span></span><code>python3 -m mindsdb --api=mysql
 </code></pre></div>
 <p>This will start MySQL API on a <code>127.0.0.1:47335</code> with the <code>mindsdb</code> as a default user and create a <code>mindsdb</code> database. To change the deafult parameters you need to extend the MindsDBs config.json or create another one and send it as a parameter to the serve start command as:</p>

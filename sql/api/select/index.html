@@ -9,21 +9,21 @@
       
       
       
-        <link rel="canonical" href="https://docs.mindsdb.com/features/ColumnMetrics/">
+        <link rel="canonical" href="https://docs.mindsdb.com/sql/api/select/">
       
-      <link rel="shortcut icon" href="../../assets/mdb_logo.png">
+      <link rel="shortcut icon" href="../../../assets/mdb_logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.5">
     
     
       
-        <title>ColumnMetrics - MindsDB Documentation</title>
+        <title>Select - MindsDB Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.15aa0b43.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.15aa0b43.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.75751829.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.75751829.min.css">
         
       
     
@@ -38,7 +38,7 @@
     
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
     
 
@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#select-statement" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +94,7 @@
     <nav class="md-header-nav md-grid" aria-label="Header">
       <a href="https://docs.mindsdb.com" title="MindsDB Documentation" class="md-header-nav__button md-logo" aria-label="MindsDB Documentation">
         
-  <img src="../../assets/mdb_logo_w.svg" alt="logo">
+  <img src="../../../assets/mdb_logo_w.svg" alt="logo">
 
       </a>
       <label class="md-header-nav__button md-icon" for="__drawer">
@@ -103,7 +108,7 @@
             </span>
             <span class="md-header-nav__topic md-ellipsis">
               
-                ColumnMetrics
+                Select
               
             </span>
           </div>
@@ -190,7 +195,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://docs.mindsdb.com" title="MindsDB Documentation" class="md-nav__button md-logo" aria-label="MindsDB Documentation">
       
-  <img src="../../assets/mdb_logo_w.svg" alt="logo">
+  <img src="../../../assets/mdb_logo_w.svg" alt="logo">
 
     </a>
     MindsDB Documentation
@@ -242,7 +247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../info/" class="md-nav__link">
+      <a href="../../../info/" class="md-nav__link">
         What is MindsDB
       </a>
     </li>
@@ -276,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/docker/" class="md-nav__link">
+      <a href="../../../deployment/docker/" class="md-nav__link">
         Docker
       </a>
     </li>
@@ -288,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/source/" class="md-nav__link">
+      <a href="../../../deployment/source/" class="md-nav__link">
         From source
       </a>
     </li>
@@ -300,7 +305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/cloud/" class="md-nav__link">
+      <a href="../../../deployment/cloud/" class="md-nav__link">
         MindsDB Cloud
       </a>
     </li>
@@ -328,7 +333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../connect/" class="md-nav__link">
+      <a href="../../../connect/" class="md-nav__link">
         Connect your data
       </a>
     </li>
@@ -342,12 +347,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
       
       <label class="md-nav__link" for="nav-3">
         SQL-ML
@@ -388,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/connect/local/" class="md-nav__link">
+      <a href="../../connect/local/" class="md-nav__link">
         Local Deployment
       </a>
     </li>
@@ -400,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/connect/cloud/" class="md-nav__link">
+      <a href="../../connect/cloud/" class="md-nav__link">
         MindsDB Cloud
       </a>
     </li>
@@ -440,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/tutorials/test/" class="md-nav__link">
+      <a href="../../tutorials/test/" class="md-nav__link">
         Regression
       </a>
     </li>
@@ -474,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/tutorials/customer-churn/" class="md-nav__link">
+      <a href="../../tutorials/customer-churn/" class="md-nav__link">
         Customer Churn
       </a>
     </li>
@@ -492,7 +499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/tutorials/test/" class="md-nav__link">
+      <a href="../../tutorials/test/" class="md-nav__link">
         Time series
       </a>
     </li>
@@ -508,12 +515,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" checked>
       
       <label class="md-nav__link" for="nav-3-3">
         API
@@ -532,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/api/use/" class="md-nav__link">
+      <a href="../use/" class="md-nav__link">
         Use
       </a>
     </li>
@@ -566,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/api/predictor/" class="md-nav__link">
+      <a href="../predictor/" class="md-nav__link">
         Predictor
       </a>
     </li>
@@ -578,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/api/view/" class="md-nav__link">
+      <a href="../view/" class="md-nav__link">
         View
       </a>
     </li>
@@ -590,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/api/predictor/" class="md-nav__link">
+      <a href="../predictor/" class="md-nav__link">
         Integration
       </a>
     </li>
@@ -602,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/api/predictor/" class="md-nav__link">
+      <a href="../predictor/" class="md-nav__link">
         Stream
       </a>
     </li>
@@ -620,7 +629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/api/drop/" class="md-nav__link">
+      <a href="../drop/" class="md-nav__link">
         Drop
       </a>
     </li>
@@ -630,11 +639,49 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../sql/api/select/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Select
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Select
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#select-example" class="md-nav__link">
+    SELECT example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -644,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/api/publish/" class="md-nav__link">
+      <a href="../publish/" class="md-nav__link">
         Publish
       </a>
     </li>
@@ -694,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mongo/connect/" class="md-nav__link">
+      <a href="../../../mongo/connect/" class="md-nav__link">
         Connect
       </a>
     </li>
@@ -728,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mongo/tutorials/test/" class="md-nav__link">
+      <a href="../../../mongo/tutorials/test/" class="md-nav__link">
         Regression
       </a>
     </li>
@@ -740,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mongo/tutorials/test/" class="md-nav__link">
+      <a href="../../../mongo/tutorials/test/" class="md-nav__link">
         Classification
       </a>
     </li>
@@ -752,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mongo/tutorials/test/" class="md-nav__link">
+      <a href="../../../mongo/tutorials/test/" class="md-nav__link">
         Time series
       </a>
     </li>
@@ -802,7 +849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bi-tools/looker/" class="md-nav__link">
+      <a href="../../../bi-tools/looker/" class="md-nav__link">
         Looker
       </a>
     </li>
@@ -814,7 +861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bi-tools/looker/" class="md-nav__link">
+      <a href="../../../bi-tools/looker/" class="md-nav__link">
         Tableau
       </a>
     </li>
@@ -826,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bi-tools/looker/" class="md-nav__link">
+      <a href="../../../bi-tools/looker/" class="md-nav__link">
         Preset
       </a>
     </li>
@@ -870,7 +917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../contribute/" class="md-nav__link">
+      <a href="../../../contribute/" class="md-nav__link">
         How to contribute
       </a>
     </li>
@@ -882,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../community/" class="md-nav__link">
+      <a href="../../../community/" class="md-nav__link">
         Join our community
       </a>
     </li>
@@ -894,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/" class="md-nav__link">
+      <a href="../../../faq/" class="md-nav__link">
         FAQ
       </a>
     </li>
@@ -960,7 +1007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Getting started
       </a>
     </li>
@@ -972,7 +1019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/docker.md" class="md-nav__link">
+      <a href="../../../installation/docker.md" class="md-nav__link">
         Docker
       </a>
     </li>
@@ -984,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/windows.md" class="md-nav__link">
+      <a href="../../../installation/windows.md" class="md-nav__link">
         Windows
       </a>
     </li>
@@ -996,7 +1043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/linux.md" class="md-nav__link">
+      <a href="../../../installation/linux.md" class="md-nav__link">
         Linux
       </a>
     </li>
@@ -1008,7 +1055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/macos.md" class="md-nav__link">
+      <a href="../../../installation/macos.md" class="md-nav__link">
         MacOS
       </a>
     </li>
@@ -1020,7 +1067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/source.md" class="md-nav__link">
+      <a href="../../../installation/source.md" class="md-nav__link">
         From source
       </a>
     </li>
@@ -1060,7 +1107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datasources/mysql/" class="md-nav__link">
+      <a href="../../../datasources/mysql/" class="md-nav__link">
         MySQL
       </a>
     </li>
@@ -1072,7 +1119,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datasources/postgresql/" class="md-nav__link">
+      <a href="../../../datasources/postgresql/" class="md-nav__link">
         PostgreSQL
       </a>
     </li>
@@ -1084,7 +1131,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datasources/mariadb/" class="md-nav__link">
+      <a href="../../../datasources/mariadb/" class="md-nav__link">
         MariaDB
       </a>
     </li>
@@ -1096,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datasources/clickhouse/" class="md-nav__link">
+      <a href="../../../datasources/clickhouse/" class="md-nav__link">
         ClickHouse
       </a>
     </li>
@@ -1108,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datasources/mssql/" class="md-nav__link">
+      <a href="../../../datasources/mssql/" class="md-nav__link">
         Microsoft SQL Server
       </a>
     </li>
@@ -1120,7 +1167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datasources/mongodb/" class="md-nav__link">
+      <a href="../../../datasources/mongodb/" class="md-nav__link">
         MongoDB
       </a>
     </li>
@@ -1132,7 +1179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datasources/remote/" class="md-nav__link">
+      <a href="../../../datasources/remote/" class="md-nav__link">
         Remote URL
       </a>
     </li>
@@ -1144,7 +1191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datasources/local/" class="md-nav__link">
+      <a href="../../../datasources/local/" class="md-nav__link">
         Local dataset
       </a>
     </li>
@@ -1156,7 +1203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datasources/snowflake/" class="md-nav__link">
+      <a href="../../../datasources/snowflake/" class="md-nav__link">
         Snowflake
       </a>
     </li>
@@ -1196,7 +1243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/train/" class="md-nav__link">
+      <a href="../../../model/train/" class="md-nav__link">
         Create and train from Studio
       </a>
     </li>
@@ -1230,7 +1277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/mysql/" class="md-nav__link">
+      <a href="../../../model/mysql/" class="md-nav__link">
         MySQL
       </a>
     </li>
@@ -1242,7 +1289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/postgresql/" class="md-nav__link">
+      <a href="../../../model/postgresql/" class="md-nav__link">
         PostgreSQL
       </a>
     </li>
@@ -1254,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/mariadb/" class="md-nav__link">
+      <a href="../../../model/mariadb/" class="md-nav__link">
         MariaDB
       </a>
     </li>
@@ -1266,7 +1313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/clickhouse/" class="md-nav__link">
+      <a href="../../../model/clickhouse/" class="md-nav__link">
         ClickHouse
       </a>
     </li>
@@ -1278,7 +1325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/mssql/" class="md-nav__link">
+      <a href="../../../model/mssql/" class="md-nav__link">
         Microsoft SQL Server
       </a>
     </li>
@@ -1290,7 +1337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/mongodb/" class="md-nav__link">
+      <a href="../../../model/mongodb/" class="md-nav__link">
         MongoDB
       </a>
     </li>
@@ -1336,7 +1383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/quality/" class="md-nav__link">
+      <a href="../../../model/quality/" class="md-nav__link">
         Evaluate from Studio
       </a>
     </li>
@@ -1398,7 +1445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/query/mysql/" class="md-nav__link">
+      <a href="../../../model/query/mysql/" class="md-nav__link">
         MySQL
       </a>
     </li>
@@ -1410,7 +1457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/query/postgresql/" class="md-nav__link">
+      <a href="../../../model/query/postgresql/" class="md-nav__link">
         PostgreSQL
       </a>
     </li>
@@ -1422,7 +1469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/query/mariadb/" class="md-nav__link">
+      <a href="../../../model/query/mariadb/" class="md-nav__link">
         MariaDB
       </a>
     </li>
@@ -1434,7 +1481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/query/clickhouse/" class="md-nav__link">
+      <a href="../../../model/query/clickhouse/" class="md-nav__link">
         ClickHouse
       </a>
     </li>
@@ -1446,7 +1493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/query/mssql/" class="md-nav__link">
+      <a href="../../../model/query/mssql/" class="md-nav__link">
         Microsoft SQL Server
       </a>
     </li>
@@ -1458,7 +1505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/query/mongodb/" class="md-nav__link">
+      <a href="../../../model/query/mongodb/" class="md-nav__link">
         MongoDB
       </a>
     </li>
@@ -1476,7 +1523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/query/studio/" class="md-nav__link">
+      <a href="../../../model/query/studio/" class="md-nav__link">
         Query from Studio
       </a>
     </li>
@@ -1516,7 +1563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/mysql/" class="md-nav__link">
+      <a href="../../../tutorials/mysql/" class="md-nav__link">
         AI Tables in MySQL
       </a>
     </li>
@@ -1528,7 +1575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/mariadb/" class="md-nav__link">
+      <a href="../../../tutorials/mariadb/" class="md-nav__link">
         AI Tables in MariaDB
       </a>
     </li>
@@ -1540,7 +1587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/postgresql/" class="md-nav__link">
+      <a href="../../../tutorials/postgresql/" class="md-nav__link">
         AI Tables in PostgreSQL
       </a>
     </li>
@@ -1552,7 +1599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/clickhouse/" class="md-nav__link">
+      <a href="../../../tutorials/clickhouse/" class="md-nav__link">
         AI Tables in ClickHouse
       </a>
     </li>
@@ -1564,7 +1611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/microsoft-sql-server/" class="md-nav__link">
+      <a href="../../../tutorials/microsoft-sql-server/" class="md-nav__link">
         AI Tables in Microsoft SQL Server
       </a>
     </li>
@@ -1626,7 +1673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/BasicExample/" class="md-nav__link">
+      <a href="../../../tutorials/BasicExample/" class="md-nav__link">
         Starter Example
       </a>
     </li>
@@ -1638,7 +1685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../GoogleColab/" class="md-nav__link">
+      <a href="../../../GoogleColab/" class="md-nav__link">
         Running on Google Colab
       </a>
     </li>
@@ -1650,7 +1697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../JupyterNotebook/" class="md-nav__link">
+      <a href="../../../JupyterNotebook/" class="md-nav__link">
         Running on Jupyter Notebook
       </a>
     </li>
@@ -1662,7 +1709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PredictorInterface/" class="md-nav__link">
+      <a href="../../../PredictorInterface/" class="md-nav__link">
         Predictor Interface
       </a>
     </li>
@@ -1674,7 +1721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../FunctionalInterface/" class="md-nav__link">
+      <a href="../../../FunctionalInterface/" class="md-nav__link">
         Functional Interface
       </a>
     </li>
@@ -1686,7 +1733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/AdvancedExamples/" class="md-nav__link">
+      <a href="../../../tutorials/AdvancedExamples/" class="md-nav__link">
         Advanced usecases
       </a>
     </li>
@@ -1698,7 +1745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/Timeseries/" class="md-nav__link">
+      <a href="../../../tutorials/Timeseries/" class="md-nav__link">
         Timeseries Data
       </a>
     </li>
@@ -1710,7 +1757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../DataSources/" class="md-nav__link">
+      <a href="../../../features/DataSources/" class="md-nav__link">
         Data sources
       </a>
     </li>
@@ -1722,7 +1769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Config/" class="md-nav__link">
+      <a href="../../../Config/" class="md-nav__link">
         Configuration Settings
       </a>
     </li>
@@ -1734,7 +1781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lightwood/info/" class="md-nav__link">
+      <a href="../../../lightwood/info/" class="md-nav__link">
         Introduction to Lightwood
       </a>
     </li>
@@ -1746,7 +1793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../comparisons/ComparsionWithOtherLibraries/" class="md-nav__link">
+      <a href="../../../comparisons/ComparsionWithOtherLibraries/" class="md-nav__link">
         Comparison with other Libraries
       </a>
     </li>
@@ -1802,7 +1849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/PredictiveMaintenance/" class="md-nav__link">
+      <a href="../../../tutorials/PredictiveMaintenance/" class="md-nav__link">
         Predictive Maintenance
       </a>
     </li>
@@ -1842,7 +1889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/CreditScoring/" class="md-nav__link">
+      <a href="../../../tutorials/CreditScoring/" class="md-nav__link">
         Credit Scoring
       </a>
     </li>
@@ -1882,7 +1929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/CustomerLifetimeValue/" class="md-nav__link">
+      <a href="../../../tutorials/CustomerLifetimeValue/" class="md-nav__link">
         Custiner Lifetime Value Optimization
       </a>
     </li>
@@ -1894,7 +1941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/FraudDetection/" class="md-nav__link">
+      <a href="../../../tutorials/FraudDetection/" class="md-nav__link">
         Fraud Detection
       </a>
     </li>
@@ -1934,7 +1981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/PatientHealthOutcomes/" class="md-nav__link">
+      <a href="../../../tutorials/PatientHealthOutcomes/" class="md-nav__link">
         Patient Health
       </a>
     </li>
@@ -1946,7 +1993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/MedicalDiagnosis/" class="md-nav__link">
+      <a href="../../../tutorials/MedicalDiagnosis/" class="md-nav__link">
         Medical Diagnosis
       </a>
     </li>
@@ -1986,7 +2033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/HotelBooking/" class="md-nav__link">
+      <a href="../../../tutorials/HotelBooking/" class="md-nav__link">
         Hotel Booking Demand
       </a>
     </li>
@@ -2026,7 +2073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/ChurnReduction/" class="md-nav__link">
+      <a href="../../../tutorials/ChurnReduction/" class="md-nav__link">
         Customer Churn Reduction
       </a>
     </li>
@@ -2056,7 +2103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../server/SDKs/" class="md-nav__link">
+      <a href="../../../server/SDKs/" class="md-nav__link">
         MindsDB SDK
       </a>
     </li>
@@ -2096,7 +2143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../contribute/" class="md-nav__link">
+      <a href="../../../contribute/" class="md-nav__link">
         How to contribute
       </a>
     </li>
@@ -2108,7 +2155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../community/" class="md-nav__link">
+      <a href="../../../community/" class="md-nav__link">
         Join our community
       </a>
     </li>
@@ -2120,7 +2167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/" class="md-nav__link">
+      <a href="../../../faq/" class="md-nav__link">
         FAQ
       </a>
     </li>
@@ -2132,7 +2179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../InsideMindsDB/" class="md-nav__link">
+      <a href="../../../InsideMindsDB/" class="md-nav__link">
         Inside MindsDB
       </a>
     </li>
@@ -2158,19 +2205,120 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#select-example" class="md-nav__link">
+    SELECT example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mindsdb/mindsdb/edit/master/docs/features/ColumnMetrics.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/mindsdb/mindsdb/edit/master/docs/sql/api/select.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>ColumnMetrics</h1>
-                
-                <p>@TODO: Outdated, pending refacotr</p>
+                <h1 id="select-statement">SELECT statement</h1>
+<p>The <code>SELECT</code> statement is used to get a predictons from the model table. The data is not persistent and is returned on the fly as a result-set.</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span> <span class="k">column_name</span><span class="p">,</span> <span class="n">column_name2</span> <span class="k">FROM</span> <span class="n">model_table</span><span class="p">;</span>
+</code></pre></div>
+<p>The below list contains the column names of the model table. Note that <code>target_varaiable_</code> will be the name of the target variable column.</p>
+<ul>
+<li>target_variable_original - The original value of the target variable.</li>
+<li>target_variable_min - Lower bound of the predicted value.</li>
+<li>target_variable_max - Upper bound of the predicted value.</li>
+<li>target_variable_confidence - Model confidence score.</li>
+<li>target_variable_explain - JSON object that contains additional information as <code>confidence_lower_bound</code>, <code>confidence_upper_bound</code>, <code>anomaly</code>, <code>truth</code>.</li>
+<li>when_data - The data to make the predictions from(WHERE clause params).</li>
+<li>select_data_query - SQL select query to create the datasource.</li>
+<li>external_datasource - Name of the pre-existing datasource that the model was built from.</li>
+</ul>
+<h2 id="select-example">SELECT example</h2>
+<p>The following SQL statement selects all information from the <code>home_rentals_model</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">home_rentals</span> 
+<span class="k">WHERE</span> <span class="n">when_data</span><span class="o">=</span><span class="s1">&#39;{&quot;sqft&quot;: 800, &quot;number_of_rooms&quot;: 4, &quot;number_of_bathrooms&quot;: 2,</span>
+<span class="s1">                  &quot;location&quot;: &quot;good&quot;, &quot;days_on_market&quot; : 12, </span>
+<span class="s1">                  &quot;neighborhood&quot;: &quot;downtown&quot;, &quot;initial_price&quot;: &quot;2222&quot;}&#39;</span><span class="p">;</span>
+</code></pre></div>
+<p><img alt="SELECT model_name" src="/assets/sql/select_hr.png" /></p>
+<table>
+<thead>
+<tr>
+<th align="right">rental_price</th>
+<th align="right">number_of_rooms</th>
+<th align="right">number_of_bathrooms</th>
+<th align="right">sqft</th>
+<th align="left">location</th>
+<th align="right">days_on_market</th>
+<th align="right">initial_price</th>
+<th align="left">neighborhood</th>
+<th align="right">rental_price_original</th>
+<th align="right">rental_price_min</th>
+<th align="right">rental_price_max</th>
+<th align="right">rental_price_confidence</th>
+<th align="left">rental_price_explain</th>
+<th align="left">when_data</th>
+<th align="right">select_data_query</th>
+<th align="right">external_datasource</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">2450</td>
+<td align="right">4</td>
+<td align="right">2</td>
+<td align="right">800</td>
+<td align="left">good</td>
+<td align="right">12</td>
+<td align="right">2222</td>
+<td align="left">downtown</td>
+<td align="right">nan</td>
+<td align="right">2407</td>
+<td align="right">2493</td>
+<td align="right">0.99</td>
+<td align="left">{"predicted_value": 2450, "confidence": 0.99, "confidence_lower_bound": 2407, "confidence_upper_bound": 2493, "anomaly": null, "truth": null}</td>
+<td align="left">{"sqft": 800, "number_of_rooms": 4, "number_of_bathrooms": 2, "location": "good", "days_on_market" : 12, "neighborhood": "downtown", "initial_price": "2222"}</td>
+<td align="right">nan</td>
+<td align="right">nan</td>
+</tr>
+</tbody>
+</table>
+<p>The following SQL statement selects only the target variable <code>rental_price</code> and accuracy from the <code>home_rentals_model</code> and adds alias names:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span> <span class="n">rental_price</span> <span class="k">as</span> <span class="n">price</span><span class="p">,</span> 
+<span class="n">rental_price_confidence</span> <span class="k">as</span> <span class="n">accuracy</span> 
+<span class="k">FROM</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">home_rentals</span> <span class="k">WHERE</span> <span class="n">when_data</span><span class="o">=</span><span class="s1">&#39;{&quot;sqft&quot;: 800, &quot;number_of_rooms&quot;: 4, &quot;number_of_bathrooms&quot;: 2, </span>
+<span class="s1">                                            &quot;location&quot;: &quot;good&quot;, &quot;days_on_market&quot; : 12,  </span>
+<span class="s1">                                            &quot;neighborhood&quot;: &quot;downtown&quot;, &quot;initial_price&quot;: &quot;2222&quot;}&#39;</span><span class="p">;</span>
+</code></pre></div>
+<p><img alt="SELECT model_name" src="/assets/sql/select_hra.png" /></p>
                 
               
               
@@ -2179,7 +2327,7 @@
 
   <h2 id="__comments">Comments</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="https://docs.mindsdb.com/features/ColumnMetrics/",this.page.identifier="/features/ColumnMetrics/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//docs-mindsdb-com.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
+  <script>var disqus_config=function(){this.page.url="https://docs.mindsdb.com/sql/api/select/",this.page.identifier="/sql/api/select/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//docs-mindsdb-com.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
 
               
             </article>
@@ -2191,15 +2339,15 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.93c04032.min.js"></script>
-      <script src="../../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "../..",
+          base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.8c7e0a7e.min.js"
+            worker: "../../../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
